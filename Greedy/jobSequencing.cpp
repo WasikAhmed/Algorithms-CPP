@@ -82,10 +82,14 @@ int main()
     }
 
     cout<< "Scheduled jobs: "<< endl;
-    rep(i,0,schedule.size()) 
-    {
-        cout<< schedule[i].id<< " ";
+    // rep(i,0,schedule.size()) 
+    // {
+    //     cout<< schedule[i].id<< " ";
+    // }
+    for(auto &s : schedule) {
+        cout<< s.id<< " ";
     }
+    cout<< endl; 
 
 
     return 0;
